@@ -4,12 +4,12 @@ backend:
   branch: master
   site_domain: dreamy-cori-245433.netlify.com
 
-media_folder: "images/uploads"
+media_folder: "assets/images/uploads"
 
 collections:
   - name: "actionreports" # Used in routes, e.g., /admin/collections/blog
     label: "Action Reports" # Used in the UI
-    folder: "_posts/" # The path to the folder where the documents are stored
+    folder: "site_content/_posts/" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
@@ -19,7 +19,7 @@ collections:
       - {label: "Body", name: "body", widget: "markdown"}
   - name: "events" # Used in routes, e.g., /admin/collections/blog
     label: "Events" # Used in the UI
-    folder: "_events/" # The path to the folder where the documents are stored
+    folder: "site_content/_events/" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
@@ -29,7 +29,7 @@ collections:
       - {label: "Body", name: "body", widget: "markdown"}
   - name: "groups" # Used in routes, e.g., /admin/collections/blog
     label: "Directory" # Used in the UI
-    folder: "_groups/" # The path to the folder where the documents are stored
+    folder: "site_content/_groups/" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
