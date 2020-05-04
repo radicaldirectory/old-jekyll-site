@@ -27,9 +27,9 @@ collections:
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Tags", name: "tags", widget: "list"}
       - {label: "Body", name: "body", widget: "markdown"}
-  - name: "groups" # Used in routes, e.g., /admin/collections/blog
-    label: "Directory" # Used in the UI
-    folder: "site_content/_groups/" # The path to the folder where the documents are stored
+  - name: "listings" # Used in routes, e.g., /admin/collections/blog
+    label: "Groups" # Used in the UI
+    folder: "site_content/_listings/" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
