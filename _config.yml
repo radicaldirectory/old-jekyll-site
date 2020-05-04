@@ -32,9 +32,13 @@ theme: minima
 plugins:
   - jekyll-feed
   
+collections_dir: site_content
+
 collections:
-  - events
-  - listings
+  events:
+    past: true
+  listings:
+    sort_by: name
 
 # Exclude from processing.
 # The following items will not be processed, by default.
