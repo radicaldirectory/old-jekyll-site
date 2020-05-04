@@ -4,4 +4,7 @@
 
 layout: home
 title: Action Reports
+permalink: /actionreports/
 ---
+
+Test text
