@@ -1,8 +1,8 @@
 ---
 title: cool event
 past: true
-date: 01/05/2020
-time: 17:00
+event_date: 2020-05-01
+event_time: 1700
 ---
 
 # Cool event!

@@ -37,6 +37,8 @@ collections_dir: site_content
 collections:
   events:
     past: true
+    output: true
+    permalink: /events/:path/
   listings:
     sort_by: name
 
