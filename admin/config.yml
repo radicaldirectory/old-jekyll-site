@@ -25,21 +25,21 @@ collections:
     fields: # The fields for each document, usually in front matter
       - {label: "Title", name: "title", widget: "string"}
       - {
-         label: "Start" 
-         name: "start" 
-         widget: "datetime"
-         default: ""
-         dateFormat: "DD-MM-YYYY" # e.g. 24.12.2021
-         timeFormat: "HH:mm" # e.g. 21:07
+         label: "Start", 
+         name: "start",
+         widget: "datetime",
+         default: "",
+         dateFormat: "DD-MM-YYYY", 
+         timeFormat: "HH:mm", 
          format: "LLL"
         }
       - {
          label: "End", 
          name: "end", 
-         widget: "datetime"
-         default: ""
-         dateFormat: "DD-MM-YYYY" # e.g. 24.12.2021
-         timeFormat: "HH:mm" # e.g. 21:07
+         widget: "datetime",
+         default: "",
+         dateFormat: "DD-MM-YYYY",
+         timeFormat: "HH:mm", 
          format: "LLL"
         }
       - {label: "Tags", name: "tags", widget: "list"}
