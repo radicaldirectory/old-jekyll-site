@@ -4,7 +4,14 @@ title: Groups
 permalink: /groups/
 ---
 
+
+
+
+
 {% for listing in site.listings %}
   <h2>{{ listing.name }} - {{ listing.category }}</h2>
   <p>{{ listing.content | markdownify }}</p>
 {% endfor %}
+
+
+

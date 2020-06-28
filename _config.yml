@@ -39,6 +39,7 @@ collections:
     past: true
     output: true
     permalink: /events/:path/
+    title: Events
   listings:
     sort_by: name
 
