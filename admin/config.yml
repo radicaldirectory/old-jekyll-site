@@ -28,16 +28,10 @@ collections:
         name: "start"
         widget: "datetime"
         default: ""
-        dateFormat: "DD-MM-YYYY"
-        timeFormat: "HH:mm"
-        format: "LLL"
       - label: "End" 
         name: "end"
         widget: "datetime"
         default: ""
-        dateFormat: "DD-MM-YYYY"
-        timeFormat: "HH:mm" 
-        format: "LLL"
       - {label: "Tags", name: "tags", widget: "list"}
       - {label: "Body", name: "body", widget: "markdown"}
   - name: "listings" # Used in routes, e.g., /admin/collections/blog
