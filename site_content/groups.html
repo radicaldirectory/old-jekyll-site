@@ -3,14 +3,34 @@ layout: page
 title: Groups
 permalink: /groups/
 ---
-<div class="dt flex flex-wrap w-100 fl">
-{% assign sorted_listings = site.listings| sort:'title' %}
-{% for listing in sorted_listings %}
-    <article class="dtc w-20 bg-white br3 pa3 pa4-ns mr4 mb4 ba b--black-10">
-        <div class="tc ">
-            <h2>{{ listing.name }} {{ listing.category }}</h2>
-            <p>{{ listing.content | markdownify }}</p>
+<article class="db h-100">
+    <div class="grid">
+    {% assign sorted_listings = site.listings| sort:'title' %}
+    {% for listing in sorted_listings %}
+        <div class="grid-item mr4 mb4">
+            <article class="measure-narrow bg-white br3 pa3 pa4-ns ba b--black-10">
+                <div class="tc">
+                    <h2>{{ listing.name }} {{ listing.category }}</h2>
+                    <p>{{ listing.content | markdownify }}</p>
+                </div>
+            </article>
         </div>
-    </article>
-{% endfor %}
-</div>
+    {% endfor %}
+    </div>
+    <p class="near-white"> ~ </p>
+</article>
+
+
+<script>
+var grid = document.querySelector('.grid');
+var msnry = new Masonry(grid, {
+  // options
+  itemSelector: '.grid-item',
+});
+
+// element argument can be a selector string
+//   for an individual element
+var msnry = new Masonry( '.grid', {
+  // options
+});
+</script>

@@ -1,12 +1,12 @@
-<header class="site-header">
+<header>
     
-    <div class="wrapper">
+    <div>
     {%- assign default_paths = site.pages | map: "path" -%}
     {%- assign page_paths = site.header_pages | default: default_paths -%}
     {%- assign titles_size = site.pages | map: 'title' | join: '' | size -%}
 
         <article class="bg-light-pink pv4 ph4 tl">
-            <a class="helvetica mid-gray hover-near-white f1 fw7" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
+            <a class="helvetica dark-gray hover-near-white f1 fw7" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
                 <ul class="list tl pl0 w-100 mt3">
                   {%- for path in page_paths -%}
                     {%- assign my_page = site.pages | where: "path", path | first -%}
