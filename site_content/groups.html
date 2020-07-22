@@ -3,15 +3,14 @@ layout: page
 title: Groups
 permalink: /groups/
 ---
-
-
-
-
-
-{% for listing in site.listings %}
-  <h2>{{ listing.name }} - {{ listing.category }}</h2>
-  <p>{{ listing.content | markdownify }}</p>
+<div class="dt flex flex-wrap w-100 fl">
+{% assign sorted_listings = site.listings| sort:'title' %}
+{% for listing in sorted_listings %}
+    <article class="dtc w-20 bg-white br3 pa3 pa4-ns mr4 mb4 ba b--black-10">
+        <div class="tc ">
+            <h2>{{ listing.name }} {{ listing.category }}</h2>
+            <p>{{ listing.content | markdownify }}</p>
+        </div>
+    </article>
 {% endfor %}
-
-
-
+</div>
