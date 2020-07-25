@@ -1,4 +1,5 @@
 ---
+layout: post
 name: Frontline Action on Coal
 date: 2020-05-31T03:08:36.195Z
 tags:

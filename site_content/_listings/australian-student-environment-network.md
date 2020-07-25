@@ -1,4 +1,5 @@
 ---
+layout: post
 name: Australian Student Environment Network
 date: 2020-05-31T03:17:27.392Z
 tags:

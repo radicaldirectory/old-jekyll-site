@@ -1,4 +1,5 @@
 ---
+layout: post
 name: Sisters Inside
 date: 2020-05-31T02:58:33.428Z
 tags:

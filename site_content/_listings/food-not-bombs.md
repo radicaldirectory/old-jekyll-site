@@ -1,4 +1,5 @@
 ---
+layout: post
 name: Food Not Bombs
 date: 2020-05-31T03:01:37.736Z
 tags:

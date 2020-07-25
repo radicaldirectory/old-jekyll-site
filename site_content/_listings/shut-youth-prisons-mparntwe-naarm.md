@@ -1,4 +1,5 @@
 ---
+layout: post
 name: Shut Youth Prisons (Mparntwe & Naarm)
 date: 2020-05-31T02:56:43.267Z
 tags:

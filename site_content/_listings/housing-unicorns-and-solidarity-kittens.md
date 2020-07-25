@@ -1,4 +1,5 @@
 ---
+layout: post
 name: Housing Unicorns and Solidarity Kittens
 date: 2020-05-31T03:37:24.369Z
 tags:

@@ -1,4 +1,5 @@
 ---
+layout: post
 name: Refugees Survivors and Ex-Detainees
 date: 2020-05-31T03:29:51.188Z
 tags:

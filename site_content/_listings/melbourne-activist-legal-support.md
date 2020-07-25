@@ -1,4 +1,5 @@
 ---
+layout: post
 name: Melbourne Activist Legal Support
 date: 2020-05-31T03:07:24.608Z
 tags:

@@ -1,4 +1,5 @@
 ---
+layout: post
 name: IRL Infoshop
 date: 2020-05-31T03:03:30.122Z
 tags:

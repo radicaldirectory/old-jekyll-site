@@ -1,4 +1,5 @@
 ---
+layout: post
 name: Goongerah Environment Centre
 date: 2020-05-31T03:03:55.030Z
 tags:

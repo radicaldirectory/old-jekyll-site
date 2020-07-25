@@ -1,4 +1,5 @@
 ---
+layout: post
 name: Fitzroy Legal Service
 date: 2020-05-31T03:08:59.369Z
 tags:

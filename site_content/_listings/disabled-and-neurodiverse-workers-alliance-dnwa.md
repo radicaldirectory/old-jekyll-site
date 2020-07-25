@@ -1,4 +1,5 @@
 ---
+layout: post
 name: Disabled and Neurodiverse Workers Alliance (DNWA)
 date: 2020-05-31T04:01:40.504Z
 tags:

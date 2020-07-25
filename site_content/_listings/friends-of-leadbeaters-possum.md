@@ -1,4 +1,5 @@
 ---
+layout: post
 name: Friends of Leadbeaters Possum
 date: 2020-05-31T03:20:48.606Z
 tags:

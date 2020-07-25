@@ -1,4 +1,5 @@
 ---
+layout: post
 name: Wildlife of the Central Highlands
 date: 2020-05-31T03:05:15.450Z
 tags:

@@ -1,4 +1,5 @@
 ---
+layout: post
 name: Latin American Solidarity Network
 date: 2020-05-31T03:24:54.757Z
 tags:

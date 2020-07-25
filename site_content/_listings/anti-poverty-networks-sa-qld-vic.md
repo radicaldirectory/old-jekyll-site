@@ -1,5 +1,6 @@
 ---
 name: Anti Poverty Networks (SA, QLD, VIC)
+layout: post
 date: 2020-05-31T03:41:38.374Z
 tags:
   - "#poverty #welfare"

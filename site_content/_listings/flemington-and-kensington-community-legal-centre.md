@@ -1,4 +1,5 @@
 ---
+layout: post
 name: Flemington and Kensington Community Legal Centre
 date: 2020-05-31T03:08:17.103Z
 tags:

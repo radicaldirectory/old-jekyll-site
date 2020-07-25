@@ -1,4 +1,5 @@
 ---
+layout: post
 name: Darebin Community Legal Centre
 date: 2020-05-31T03:09:58.316Z
 tags:

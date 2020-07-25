@@ -1,4 +1,5 @@
 ---
+layout: post
 name: Australian Unemployed Workers Union (AUWU)
 date: 2020-05-31T03:06:35.655Z
 tags:

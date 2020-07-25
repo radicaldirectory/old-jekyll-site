@@ -1,4 +1,5 @@
 ---
+layout: post
 name: Dole Action Group
 date: 2020-05-31T03:42:59.847Z
 tags:

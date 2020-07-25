@@ -1,4 +1,5 @@
 ---
+layout: post
 name: Homeless Persons Union Victoria
 date: 2020-05-31T03:35:21.388Z
 tags:
