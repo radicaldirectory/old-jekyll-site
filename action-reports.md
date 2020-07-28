@@ -4,5 +4,5 @@
 
 layout: blog
 title: Community Blog
-permalink: /reports/
+permalink: /swampblog/
 ---
