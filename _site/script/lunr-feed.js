@@ -8,6 +8,7 @@ var index = lunr(function () {
 });
 
 
+
   index.add({
     title: "Abolition And Transformative Justice Centre",
     content: "Providing advocacy, casework and support to incarcerated people, their family and friends.\n",
@@ -395,6 +396,8 @@ var index = lunr(function () {
   });
   
 
+
+ 
 // builds reference data
 var store = [{
   "title": "Abolition And Transformative Justice Centre",
@@ -655,6 +658,8 @@ var store = [{
   "category": null,
   "excerpt": "Welcome to the best idea you’ve ever heard of\n"
 }]
+
+
 // builds search
 $(document).ready(function() {
   $('input#search').on('keyup', function () {
@@ -670,7 +675,7 @@ $(document).ready(function() {
     // Loop through, match, and add results
     for (var item in result) {
       var ref = result[item].ref;
-      var searchitem = '<div class=""><div class=""><a href="'+store[ref].link+'" class="">'+store[ref].title+'</a><div class="">'+store[ref].category+'</div><p>'+store[ref].excerpt+'</p></div>';
+      var searchitem = '<div class=""><div class=""><a href="'+store[ref].link+'" class="">'+store[ref].title+'</a><p>'+store[ref].excerpt+'</p></div>';
       resultdiv.append(searchitem);
     }
   });

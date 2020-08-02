@@ -3,12 +3,14 @@ layout: page
 title: Groups
 permalink: /groups/
 ---
-
+<script src="{{ "/script/masonry.pkgd.js" | relative_url }}"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-<input placeholder="Search&hellip;" type="search" id="search" class="mb4 pa2">
-
-<div id="results" class="all-posts results"></div>
+<div class="fl w-100">
+<input placeholder="Search&hellip;" type="search" id="search" class="mb4 pa2 fl w-50">
+<div class="fl w-50 pa2"> </div>
+</div>
+<div id="results" class="pa4 fl w-100 mb4"></div>
 
 <div class="mb4">
     <a class="f5 br-pill dark-green no-underline ba grow pv2 ph3 dib mr3 bg-animate hover-bg-dark-green hover-white" href="#">
@@ -67,7 +69,9 @@ var msnry = new Masonry(grid, {
 var msnry = new Masonry( '.grid', {
   // options
 });
+    
+console.log('tjbkjgh!');
 </script>
 
-<script src="/script/lunr.js"></script>
-<script src="/script/lunr-feed.js"></script>
+<script src="{{ "/script/lunr.min.js" | relative_url }}"></script>
+<script src="{{ "/script/lunr-feed.js" | relative_url }}"></script>

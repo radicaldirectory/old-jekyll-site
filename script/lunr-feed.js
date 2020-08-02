@@ -9,6 +9,7 @@ var index = lunr(function () {
   this.field('tags')
   this.ref('id')
 });
+
 {% assign count = 0 %}
 {% for group in site.groups %}
   index.add({
@@ -20,6 +21,8 @@ var index = lunr(function () {
   });
   {% assign count = count | plus: 1 %}
 {% endfor %}
+
+ 
 // builds reference data
 var store = [{% for group in site.groups %}{
   "title": {{group.title | jsonify}},
@@ -28,6 +31,8 @@ var store = [{% for group in site.groups %}{
   "category": {{ group.categories[0] | jsonify }},
   "excerpt": {{ group.content | strip_html | truncatewords: 20 | jsonify }}
 }{% unless forloop.last %},{% endunless %}{% endfor %}]
+
+
 // builds search
 $(document).ready(function() {
   $('input#search').on('keyup', function () {
@@ -43,7 +48,7 @@ $(document).ready(function() {
     // Loop through, match, and add results
     for (var item in result) {
       var ref = result[item].ref;
-      var searchitem = '<div class=""><div class=""><a href="'+store[ref].link+'" class="">'+store[ref].title+'</a><div class="">'+store[ref].category+'</div><p>'+store[ref].excerpt+'</p></div>';
+      var searchitem = '<div class=""><div class=""><a href="'+store[ref].link+'" class="">'+store[ref].title+'</a><p>'+store[ref].excerpt+'</p></div>';
       resultdiv.append(searchitem);
     }
   });

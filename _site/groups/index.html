@@ -16,34 +16,9 @@
 <script type="application/ld+json">
 {"url":"http://localhost:4000/groups/","description":"An online directory of radical events, grassroots organising efforts and activist groups in Naarm (so called Melbourne, Australia)","headline":"Groups","@type":"WebPage","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
-<link rel="stylesheet" href="/assets/css/tachyons.min.css"/>
-    <script src="/script/masonry.pkgd.js"></script><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Radical Directory" />
+<link rel="stylesheet" href="/assets/css/tachyons.min.css"/><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Radical Directory" />
 <link href='/fullcalendar/main.css' rel='stylesheet' />
-<script src='/fullcalendar/main.js'></script>
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    var calendarEl = document.getElementById('calendar');
-    var calendar = new FullCalendar.Calendar(calendarEl, {
-      initialView: 'dayGridMonth',
-      headerToolbar: {
-        left: 'prev,next today',
-        center: 'title',
-        right: 'dayGridMonth,timeGridWeek,timeGridDay,listMonth'
-      },
-      initialDate: '2020-06-12',
-      navLinks: true, // can click day/week names to navigate views
-      editable: true,
-      selectable: true,
-      events: {
-          url: '/calendar-data',
-          failure: function() {
-            alert('there was an error while fetching events!');
-          },
-      }
-    });
-    calendar.render();
-  });
-</script></head>
+</head>
 <body class="bg-near-white"><header>
     
     <div><article class="bg-light-pink pv4 ph4 tl">
@@ -63,11 +38,14 @@
   </header>
 
   <div class="helvetica">
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="/script/masonry.pkgd.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-<input placeholder="Search&hellip;" type="search" id="search" class="mb4 pa2">
-
-<div id="results" class="all-posts results"></div>
+<div class="fl w-100">
+<input placeholder="Search&hellip;" type="search" id="search" class="mb4 pa2 fl w-50">
+<div class="fl w-50 pa2"> </div>
+</div>
+<div id="results" class="pa4 fl w-100 mb4"></div>
 
 <div class="mb4">
     <a class="f5 br-pill dark-green no-underline ba grow pv2 ph3 dib mr3 bg-animate hover-bg-dark-green hover-white" href="#">
@@ -583,9 +561,11 @@ var msnry = new Masonry(grid, {
 var msnry = new Masonry( '.grid', {
   // options
 });
+    
+console.log('tjbkjgh!');
 </script>
 
-<script src="/script/lunr.js"></script>
+<script src="/script/lunr.min.js"></script>
 <script src="/script/lunr-feed.js"></script>
 
   </div>
