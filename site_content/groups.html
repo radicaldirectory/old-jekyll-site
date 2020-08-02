@@ -3,42 +3,49 @@ layout: page
 title: Groups
 permalink: /groups/
 ---
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<input placeholder="Search&hellip;" type="search" id="search" class="mb4 pa2">
+
+<div id="results" class="all-posts results"></div>
+
 <div class="mb4">
-    <a class="f5 br-pill dark-green no-underline ba grow pv2 ph3 dib mr3" href="#">
+    <a class="f5 br-pill dark-green no-underline ba grow pv2 ph3 dib mr3 bg-animate hover-bg-dark-green hover-white" href="#">
       First Nations
     </a>
-    <a class="f5 br-pill dark-green no-underline ba grow pv2 ph3 dib mr3" href="#">
+    <a class="f5 br-pill dark-green no-underline ba grow pv2 ph3 dib mr3 bg-animate hover-bg-dark-green hover-white" href="#">
       Environment
     </a>
-    <a class="f5 br-pill dark-green no-underline ba grow pv2 ph3 dib mr3" href="#">
+    <a class="f5 br-pill dark-green no-underline ba grow pv2 ph3 dib mr3 bg-animate hover-bg-dark-green hover-white" href="#">
       Workers
     </a>
-    <a class="f5 br-pill dark-green no-underline ba grow pv2 ph3 dib mr3" href="#">
+    <a class="f5 br-pill dark-green no-underline ba grow pv2 ph3 dib mr3 bg-animate hover-bg-dark-green hover-white" href="#">
       Migrants
     </a>
-    <a class="f5 br-pill dark-green no-underline ba grow pv2 ph3 dib mr3" href="#">
+    <a class="f5 br-pill dark-green no-underline ba grow pv2 ph3 dib mr3 bg-animate hover-bg-dark-green hover-white" href="#">
       Legal
     </a>
-    <a class="f5 br-pill dark-green no-underline ba grow pv2 ph3 dib mr3" href="#">
+    <a class="f5 br-pill dark-green no-underline ba grow pv2 ph3 dib mr3 bg-animate hover-bg-dark-green hover-white" href="#">
       Disability
     </a>
-    <a class="f5 br-pill dark-green no-underline ba grow pv2 ph3 dib mr3" href="#">
+    <a class="f5 br-pill dark-green no-underline ba grow pv2 ph3 dib mr3 bg-animate hover-bg-dark-green hover-white" href="#">
       Queer
     </a>
-    <a class="f5 br-pill dark-green no-underline ba grow pv2 ph3 dib mr3" href="#">
+    <a class="f5 br-pill dark-green no-underline ba grow pv2 ph3 dib mr3 bg-animate hover-bg-dark-green hover-white" href="#">
       Abolition
     </a>
 </div>
 
 <article class="db h-100">
     <div class="grid">
-    {% assign sorted_listings = site.listings| sort:'title' %}
-    {% for listing in sorted_listings %}
+    {% assign sorted_groups = site.groups| sort:'title' %}
+    {% for group in sorted_groups %}
         <div class="grid-item mr4 mb4">
-            <article class="measure-narrow bg-white br3 pa3 pa4-ns ba b--black-10">
+            <article class="measure-narrow bg-white br3 pa3 pa4-ns ba b--black-50">
                 <div class="tc">
-                    <a class="" href="{{ listing.url | relative_url }}"><h2>{{ listing.name }} {{ listing.category }}</h2></a>
-                    <p>{{ listing.content | markdownify }}</p>
+                    <a class="link underline-hover black" href="{{ group.url | relative_url }}"><h2>{{ group.name }} {{ group.category }}</h2></a>
+                    <p>{{ group.content | markdownify }}</p>
                 </div>
             </article>
         </div>
@@ -61,3 +68,6 @@ var msnry = new Masonry( '.grid', {
   // options
 });
 </script>
+
+<script src="/script/lunr.js"></script>
+<script src="/script/lunr-feed.js"></script>

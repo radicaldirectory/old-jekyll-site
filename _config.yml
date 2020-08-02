@@ -38,10 +38,13 @@ collections:
   events:
     past: true
     output: true
-    permalink: /events/:path/
+    permalink: /:collection/:path/
     title: Events
-  listings:
+  groups:
     sort_by: name
+    title: Groups
+    output: true
+    permalink: /:collection/:path/
 
 # Exclude from processing.
 # The following items will not be processed, by default.
