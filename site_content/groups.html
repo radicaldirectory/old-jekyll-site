@@ -7,40 +7,14 @@ permalink: /groups/
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 <div class="fl w-100">
-<input placeholder="Search&hellip;" type="search" id="search" class="mb4 pa2 fl w-50">
+<input placeholder="Search&hellip;" type="search" id="search" class="mb2 pa2 fl w-50">
 <div class="fl w-50 pa2"> </div>
 </div>
-<div id="results" class="pa4 fl w-100 mb4"></div>
 
-<div class="mb4">
-    <a class="f5 br-pill dark-green no-underline ba grow pv2 ph3 dib mr3 bg-animate hover-bg-dark-green hover-white" href="#">
-      First Nations
-    </a>
-    <a class="f5 br-pill dark-green no-underline ba grow pv2 ph3 dib mr3 bg-animate hover-bg-dark-green hover-white" href="#">
-      Environment
-    </a>
-    <a class="f5 br-pill dark-green no-underline ba grow pv2 ph3 dib mr3 bg-animate hover-bg-dark-green hover-white" href="#">
-      Workers
-    </a>
-    <a class="f5 br-pill dark-green no-underline ba grow pv2 ph3 dib mr3 bg-animate hover-bg-dark-green hover-white" href="#">
-      Migrants
-    </a>
-    <a class="f5 br-pill dark-green no-underline ba grow pv2 ph3 dib mr3 bg-animate hover-bg-dark-green hover-white" href="#">
-      Legal
-    </a>
-    <a class="f5 br-pill dark-green no-underline ba grow pv2 ph3 dib mr3 bg-animate hover-bg-dark-green hover-white" href="#">
-      Disability
-    </a>
-    <a class="f5 br-pill dark-green no-underline ba grow pv2 ph3 dib mr3 bg-animate hover-bg-dark-green hover-white" href="#">
-      Queer
-    </a>
-    <a class="f5 br-pill dark-green no-underline ba grow pv2 ph3 dib mr3 bg-animate hover-bg-dark-green hover-white" href="#">
-      Abolition
-    </a>
-</div>
+<p class="near-white"> ~ </p>
 
 <article class="db h-100">
-    <div class="grid">
+    <div id="results" class="grid">
     {% assign sorted_groups = site.groups| sort:'title' %}
     {% for group in sorted_groups %}
         <div class="grid-item mr4 mb4">
@@ -56,6 +30,8 @@ permalink: /groups/
     <p class="near-white"> ~ </p>
 </article>
 
+<script src="{{ "/script/lunr.min.js" | relative_url }}"></script>
+<script src="{{ "/script/lunr-feed.js" | relative_url }}"></script>
 
 <script>
 var grid = document.querySelector('.grid');
@@ -63,15 +39,13 @@ var msnry = new Masonry(grid, {
   // options
   itemSelector: '.grid-item',
 });
-
-// element argument can be a selector string
-//   for an individual element
-var msnry = new Masonry( '.grid', {
-  // options
-});
     
-console.log('tjbkjgh!');
+$(document).ready(function() {
+  $('input#search').on('keyup', function () {
+      var msnry = new Masonry(grid, {
+  // options
+  itemSelector: '.grid-item',
+});
+  });
+});
 </script>
-
-<script src="{{ "/script/lunr.min.js" | relative_url }}"></script>
-<script src="{{ "/script/lunr-feed.js" | relative_url }}"></script>
