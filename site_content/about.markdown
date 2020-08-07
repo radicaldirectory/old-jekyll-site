@@ -4,6 +4,8 @@ title: About
 permalink: /about/
 ---
 
+Hi there!
+
 This is a directory of activist projects, groups and events. It is currently made with a focus on Naarm (Melbourne).
 
 Our goal is to reduce our reliance on corporate social media in the way that we do the work to build and strengthen our communities, to end violence and exploitation, and to protect our precious land, water and skies. 
